@@ -17,8 +17,8 @@ Sukurti maišos (*hash*) funkciją (*hash* kodų generatorių), kuris pasižymė
 
 ## Įdiegimas (Unix kompiuteryje)
 
-- `git clone https://github.com/vikuliukas/Blockchain_1uzd.git`
-- `cd Blockchain_1uzd`
+- `git clone https://github.com/KlauMack/Blockchain_1.git`
+- `cd Blockchain_1`
 - `make`
 - `./main`
 
