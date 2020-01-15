@@ -45,7 +45,7 @@ void inByLines( std::vector<hash> &diffhash, std::string &filename );
 void makeTextLonger( hash &key );
 void hashAlgorithm( hash &key );
 std::string inHexa( unsigned long long int &index );
-std::string hashAdd( std::string &basehash, hash &key );
+std::string hashShuffle( std::string &basehash, hash &key );
 void printHash ( hash &key ); 
 void printHash ( std::vector<hash> &diffhash );
 void generateFile1();

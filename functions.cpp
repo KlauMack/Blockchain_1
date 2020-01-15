@@ -113,7 +113,7 @@ void hashAlgorithm( hash &key )
     }
 
     std::string basehash = hexa[0] + hexa[1] + hexa[2] + hexa[3];
-    std::string hashadd = hashAdd(basehash, key);
+    std::string hashadd = hashShuffle(basehash, key);
     key.setOut(hashadd);
 }
 
@@ -127,28 +127,24 @@ std::string inHexa( unsigned long long int &index )
 }
 
 // To make hash more random function
-std::string hashAdd( std::string &basehash, hash &key )
+std::string hashShuffle( std::string &basehash, hash &key )
 {
-
     std::string copy = key.getIn();
     std::wstring_convert<std::codecvt_utf8_utf16<char32_t>,char32_t> converter;
     std::u32string input32 = converter.from_bytes(copy);
 
-    std::string alphabet = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789";
+    int i = 1;
+    int sum = 0;
 
-    for(unsigned int i = 0; i < basehash.size(); i++)
+    for(char32_t &character : input32)
     {
-        unsigned long tempor = basehash[i];
-        tempor = tempor + i;
-
-        while(tempor > alphabet.size())
-        {
-            tempor = tempor - alphabet.size();
-        }
-
-        basehash[i] = alphabet[tempor];
+        sum = sum + character * i;
+        i++;
     }
 
+    unsigned seed = sum;
+
+    std::shuffle(basehash.begin(), basehash.end(),std::default_random_engine(seed));
     return basehash;
 }
 
