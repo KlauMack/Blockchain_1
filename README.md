@@ -130,8 +130,11 @@ std::string hashAdd( std::string &basehash, hash &key )
 ### 1 testas
 
 - Bent du failai būtų sudaryti tik iš vieno, tačiau skirtingo, simbolio.
+
 *test1_1.txt*
+
 ```A```
+
 Rezultatas
 ```
 Algorithm took 0.0000475000 second(s) to complete.
@@ -139,7 +142,9 @@ ryTv76vvWb8DdB03b1gg5g98g9hIJlcLLNflonPRiHiTTpMSMlmmUwoOqWYQY3y6
 ```
 
 *test1_2.txt*
+
 ```1```
+
 Rezultatas
 ```
 Algorithm took 0.0000455000 second(s) to complete.
@@ -148,7 +153,9 @@ TU7T0w6V7 aBdB03b1gg5g98g9hIJlcLLNflonPRiHiTTpMSMlmmUwoOqWYQY3y6
 ### 2 testas
 
 - Bent du failai būtų sudaryti iš daug visiškai skirtingų simbolių (> 10000 simbolių).
+
 *test2_1.txt*
+
 ```
 Rooms oh fully taken by worse do. Points afraid but may end law lasted. Was out laughter raptures returned outweigh.
 Luckily cheered colonel me do we attacks on highest enabled. Tried law yet style child. Bore of true of no be deal.
@@ -158,13 +165,16 @@ companions inquietude me he remarkably friendship at. My almost or horses period
 possession him attachment unpleasing melancholy. Sir smile arose one share. No abroad in easily relied an whence lovers
 temper by. Looked wisdom common he an be giving length mr. 
 ```
+
 Rezultatas
+
 ```
 Algorithm took 0.0000925000 second(s) to complete.
 2zs71W39 8YXYyyz2FC2866aHhHkcCIjkfMNgHINrIPTQqlrltOvxWOOWyp0ZyZy
 ```
 
 *test2_2.txt*
+
 ```
 Is we miles ready he might going. Own books built put civil fully blind fanny. Projection appearance at of admiration no.
 As he totally cousins warrant besides ashamed do. Therefore by applauded acuteness supported affection it. Except had limits
@@ -173,16 +183,21 @@ all shy set why followed declared. Repeated of endeavor mr position kindness off
 preference considered saw companions. Disposal on outweigh do speedily in on. Him ham although thoughts entirely drawings.
 Acceptance unreserved old admiration projection nay yet him. Lasted am so before on esteem vanity oh.
 ```
+
 Rezultatas
+
 ```
 Algorithm took 0.0000873000 second(s) to complete.
 2s186 59Y7wY YaeFc4Efh8GhfIBhhEckfdePPmgnpISRrsqslvmooVVpzW0xrTU
 ```
+
 ### 3 testas
 
 - Bent du failai būtų sudaryti iš daug simbolių ir skirtųsi vienas nuo kito tik vienu simboliu.
 - Failų skirtumas - antrame faile nėra gale taško.
+
 *test3_1.txt*
+
 ```
 Ladyship it daughter securing procured or am moreover mr. Put sir she exercise vicinity cheerful
 wondered. Continual say suspicion provision you neglected sir curiosity unwilling. Simplicity end
@@ -194,13 +209,16 @@ consulted by mr attending he therefore on forfeited. High way more far feet kind
 furnished collected add for resources attention. Norland an by minuter enquire it general on towards forming.
 Adapted mrs totally company two yet conduct men.
 ```
+
 Rezultatas
+
 ```
 Algorithm took 0.0000962000 second(s) to complete.
 T576uvvvY9ayBy2zzDFe656gBGjiLkIJnFdlmMPqpShsSLlqvNnomouOPYWRyYZU
 ```
 
 *test3_2.txt*
+
 ```
 Ladyship it daughter securing procured or am moreover mr. Put sir she exercise vicinity cheerful
 wondered. Continual say suspicion provision you neglected sir curiosity unwilling. Simplicity end
@@ -212,7 +230,9 @@ consulted by mr attending he therefore on forfeited. High way more far feet kind
 furnished collected add for resources attention. Norland an by minuter enquire it general on towards forming.
 Adapted mrs totally company two yet conduct men
 ```
+
 Rezultatas
+
 ```
 Algorithm took 0.0001245000 second(s) to complete.
 T576uvvvY9ayBy2zzDFe656gBGjiLkIJnFdlmMPqpShsSLlqmMvMXxoPQzY2sZZy
@@ -224,6 +244,7 @@ T576uvvvY9ayBy2zzDFe656gBGjiLkIJnFdlmMPqpShsSLlqmMvMXxoPQzY2sZZy
 Tuščias failas - *test4.txt*
 
 Rezultatas
+
 ```
 Algorithm took 0.0000447000 second(s) to complete.
 yT53t9vaW7C8dB03b1gg5g98g9hIJlcLLNflonPRiHiTTpMSMlmmUwoOqWYQY3y6
@@ -232,6 +253,7 @@ yT53t9vaW7C8dB03b1gg5g98g9hIJlcLLNflonPRiHiTTpMSMlmmUwoOqWYQY3y6
 ### 5 testas
 
 - Ištirkite Jūsų sukurtos hash funkcijos efektyvumą: tuo tikslu suhash'uokite kiekvieną eilutę iš konstitucija.txt failo.
+
 Rezultatas
 ```
 y2uTW9av6YxBZaC20dD77eeGaB KDLMiemkMGgOpqJPkPjRKMUmVxoxWyq0Z2T5t
@@ -251,7 +273,9 @@ Algorithm took 0.0076054000 second(s) to complete.
 ### 6 testas
 
 - Susigeneruokite bent 1000 000 atsitiktinių simbolių eilučių (string'ų) porų, pvz.: (asdfg, hijkl) apsiribojant iki 5 simbolių eilučių ilgiu ir patikrinkite, kad visais atvejais gautieji porų hash'ai nesutampa.
+
 *test6.txt*
+
 ```
 bTAKR
 ckVEg
@@ -265,7 +289,9 @@ RJxpA
 jIvNi
 ...
 ```
+
 Rezultatas
+
 ```
 4T15W7WX5xCYYB03fGfff6gIf9hIJlcLnFmonOMGIPpjPpMSTvmmUwoOqWYQY3y6
 546UWV5v75YXYB03E51e895JG9hIJlcLDdneFhHGHniPPpMSMTUmUwoOqWYQY3y6
@@ -284,7 +310,9 @@ Algorithm took 7.1330931000 second(s) to complete.
 ### 7 testas
 
 - Susigeneruokite bent 100 000 atsitiktinių simbolių eilučių (string'ų) porų, , pvz.: (asdfg, bsdfg) tokių kad skirtųsi jos tik vienu simboliu ir apsiribojant iki 5 simbolių eilučių ilgiu.
+
 *test7.txt*
+
 ```
 QHcqZ
 Q!cqZ
@@ -298,7 +326,9 @@ HlnQu
 Hln!u
 ...
 ```
+
 Rezultatas
+
 ```
 y0212w5a6w99YB03zdF3dH ag9hIJlcLDfFLfMQHnHpqPpMSvMMtWOnQvxpx2Y5y
 y0212w5a6w99YB0340C7GFG979hIJlcLDfFLfMQHnHpqPpMSvMMtWOnQvxpx2Y5y
