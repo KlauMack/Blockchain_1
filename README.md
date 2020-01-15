@@ -86,8 +86,8 @@ void hashAlgorithm( hash &key )
     }
 
     std::string basehash = hexa[0] + hexa[1] + hexa[2] + hexa[3];
-    std::string hashadd = hashShuffle(basehash, key);
-    key.setOut(hashadd);
+    std::string hashshuffle = hashShuffle(basehash, key);
+    key.setOut(hashshuffle);
 }
 ```
 
